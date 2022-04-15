@@ -6,7 +6,6 @@ import javax.jms.*;
 import java.util.Scanner;
 
 public class producer {
-
     public static void main(String[] args) {
         try {
             ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://LP-SII-2022-104:61616");
@@ -25,7 +24,4 @@ public class producer {
             e.printStackTrace();
         }
     }
-
-
-
 }
