@@ -7,7 +7,7 @@ import javax.jms.*;
 public class consumer {
     public static void main(String[] args) {
         try {
-            ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://LP-SII-2022-104:61616");
+            ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616");
             Connection connection = connectionFactory.createConnection();
             connection.start();
             Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
